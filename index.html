@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagawadgeeta</title>
+</head>
+
+<body>
+    <h1 id="adhyayas">Adhyayas : 18</h1>
+    <h1 id="shlokas">Total Shlokas : 700</h1>
+
+    <script>
+        const SHLOKALU = [47, 72, 43, 42, 29, 47, 30, 28,
+            34, 42, 55, 20, 35, 27, 20, 24, 28, 78];
+            let table=  document.createElement('table');
+
+        SHLOKALU.forEach((sloka,i) => {
+         let row=   document.createElement('tr');
+         let col1=   document.createElement('td');
+         col1.innerText=(i+1);
+         let col2=   document.createElement('td');
+         col2.innerText=(sloka);
+
+         row.appendChild(col1);
+         row.appendChild(col2);
+
+         table.appendChild(row);
+        });
+        document.body.appendChild(table);
+
+    </script>
+</body>
+
+</html>
